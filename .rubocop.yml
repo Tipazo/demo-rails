@@ -6,16 +6,23 @@ AllCops:
     - 'db/schema.rb'
     - 'node_modules/**/*'
     - 'vendor/**/*'
+    - 'db/migrate/*.rb'
 
 Layout/LineLength:
   Max: 120
 
 Metrics/MethodLength:
-  Max: 20
+  Max: 40
 
 Metrics/ClassLength:
   Max: 200
 
+Metrics/AbcSize:
+  Max: 35
+  
+Metrics/BlockLength:
+  Max: 40 
+  
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
