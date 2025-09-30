@@ -33,5 +33,5 @@ jobs:
 
       - name: Run tests
         run: |
-          bundle exec rspec # o el comando que uses para correr tus tests
+          bin/rails test
 
