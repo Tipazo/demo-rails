@@ -1,4 +1,4 @@
-name: Run Rails Tests with SQLite
+name: Run RuboCop
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  test:
+  rubocop:
     runs-on: ubuntu-latest
 
     env:
@@ -25,13 +25,8 @@ jobs:
         run: |
           gem install bundler
           bundle install
-                 
-      - name: Prepare database
+          
+      - name: Run RuboCop
         run: |
-          bin/rails db:create
-          bin/rails db:schema:load
-
-      - name: Run tests
-        run: |
-          bin/rails test
+          bundle exec rubocop    
 
