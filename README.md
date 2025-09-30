@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
 # demo-rails
 # demo-rails
+# Test CI
