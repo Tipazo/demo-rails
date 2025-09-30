@@ -7,5 +7,4 @@ class CommentsMailerTest < ActionMailer::TestCase
     assert_equal ["soytipazzo@gmial.com"], mail.to
     assert_equal ["from@example.com"], mail.from
   end
-
 end
